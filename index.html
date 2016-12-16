@@ -1,0 +1,1265 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="League of Legends summoner statistics, player improvement, champion/item information and unique in-depth charts and graphs." /><meta name="keywords" content="league of legends, lol, summoner statistics, stats, improvement, player stats, champion, item, info, charts, graphs" /><script src="/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+<link href="/Content/css?v=" rel="stylesheet"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript">
+        var appInsights=window.appInsights||function(config){
+            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+        }({
+            instrumentationKey:"697415a2-a880-4fbd-b129-8bea0a108ff6"
+        });
+        
+        window.appInsights=appInsights;
+        appInsights.trackPageView();
+    </script>
+    <!--------------------------------->
+    <meta name="viewport" content="width=1600" /><title>
+	LolChamp - League of Legends Summoner Stats and Info
+</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="Scripts/opentip.js"></script>
+    <script src="Scripts/adapter-jquery.js"></script>
+    <link href="Content/opentip.css" rel="stylesheet" /><link href="Content/LolChampStyle.css" rel="stylesheet" /><link href="Content/bootstrap.css" rel="stylesheet" />
+
+    <!---------------------------Google Analytics Tracking--------------------------->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-67536066-1', 'auto');
+        ga('send', 'pageview');
+        //var dimensionValue = 'SOME_DIMENSION_VALUE';
+        ga('set', 'dimension1', 'UserReport Internal');
+    </script>
+</head>
+<body background="http://blog.hostbaby.com/wp-content/uploads/2013/07/scuffedstatic_dark_1920x1234.jpg">
+    <form method="post" action="./" id="ctl01">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="mfSSqAPeNlIR+EAeJpecmHjtKxeTFXAq9J0jNEvYPj92OLf8DMRKgTL5i5WiS7UnYDzWtC4VIZJr466YNWPWJbg5LrPoQtlXTtNkD1c0j4r2mnfXS4QAajRH/qc128ZqLJ+FbiVgfQI5FL7qEM4pb/JNe0N5J+MRef3cMkycUOJMi87ZekQwYPtWvcRwCbRKSf24rkq8fdWUPWxWfkqe7Q==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl01'];
+if (!theForm) {
+    theForm = document.ctl01;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script src="/bundles/MsAjaxJs?v=c42ygB2U07n37m_Sfa8ZbLGVu4Rr2gsBo7MvUEnJeZ81" type="text/javascript"></script>
+<script src="Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="Scripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="/bundles/WebFormsJs?v=AAyiAYwMfvmwjNSBfIMrBAqfU5exDukMVhrRuZ-PDU01" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl14', 'ctl01', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="./" class="navbar-brand">LolChamp</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="./">Home</a></li>
+                        <li><a href="Champions">Champions</a></li>
+                        <li><a href="Items">Items</a></li>
+                    </ul>
+                    
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="Account/Register">Register</a></li>
+                                <li><a href="Account/Login">Log in</a></li>
+                            </ul>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            
+
+    <!-- profile page: -Add improvement ranking scale. Some form of hierarchy maybe with champ at top. cylinder that fills up maybe.
+     improvement page: -Add improvement over time scale. Line graph like lolking lolscore graph 
+                       -monthly, weekly, daily, seasonal improvements by champion and overall
+                       -Improvement could be based on win % and KDA. Could save collection of weekly improvement scores.
+                       could save collection of weekly improvements in a string of numbers. If improvement score is a number between
+                       0-99 then it can be saved in a string of numbers for each week. ex: 11565778889499... Each 2 digits
+                       represents a different week. New string for every season. -->
+
+    <script src="Scripts/opentip.js"></script>
+    <script src="Scripts/adapter-jquery.js"></script>
+    <link href="Content/opentip.css" rel="stylesheet" />
+
+    <div class="main_container">
+        <img id="loadingGif" src="http://content1.edgar-online.com/chartiq/images/stx-loading.gif" style="position:fixed; left:48.5%; top:48.5%; display:none; width:3%; height:auto">
+        <div class="search_container" id="wrapper">
+            <input id="username_input" class="name_input" type="search" placeholder="Summoner Name..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Summoner Name...'" onkeydown="if (event.keyCode == 13) document.getElementById('search_name').click()" />
+            <select id="region" class="region_select">
+                <option value="na">NA</option>
+                <option value="br">BR</option>
+                <option value="eune">EUNE</option>
+                <option value="euw">EUW</option>
+                <option value="kr">KR</option>
+                <option value="lan">LAN</option>
+                <option value="las">LAS</option>
+                <option value="oce">OCE</option>
+                <option value="ru">RU</option>
+                <option value="tr">TR</option>
+            </select>
+            <button type="button" id="search_name" class="nav-toggler toggle-push-top">Find Summoner</button>
+            <!--Add region selector-->
+            <div class="lolchamp_info">
+                <div class="infoTitle">Who We Are?</div><br />
+                <div style="font:1.25rem 'Trebutchet MS'">
+                    Just two guys, no different than any of you, who aspire to create the best possible League of Legends environment. 
+                    We’re both sophomores in college, studying computer science. We’ve played many games, most being very entertaining, but League of Legends stole our hearts. 
+                    We’ve been avid LoL players since season 3; we’ve been around for many changes; we’ve been high ranks and we’ve been low ranks; but through it all, we have 
+                    had unparalleled fun. With our growing knowledge in computer science and our great appreciation for League of Legends we decided to create LoLChamp.
+                    <br /><br /><div class="infoTitle">Why we created LoLChamp?</div><br />
+                    After thousands of hours of gameplay, seeing both spectrums of skill level, and simply talking to fellow Summoners, we felt there was a void that needed to be 
+                    filled. Sure you can go to some websites to view basic stats such as minions killed, champions killed, assists, etc., but we craved more than just those 
+                    fundamental values. We were hungry for in-depth statistics that provide a much better insight as to things such as: how well you play, what champions you are 
+                    best with, and how much you improve.
+                    <br /><br /><div class="infoTitle">What we offer?</div><br />
+                    LoLChamp is an alternative to websites such as LoLKing and OP.GG. What differentiates us is easy-to-grasp, in-depth charts, graphs, and statistics so that 
+                    you can not only see how well you do in any given game, but you can track your overall gameplay and most importantly, track your improvements. Our primary 
+                    goal is to give you pertinent information that will allow you to improve on your gameplay. This being said, if you have any suggestions, criticism, or 
+                    comments, please do not hesitate to post in our feedback section.
+                    <br /><br />Your fellow Summoners,
+                    <br /><span style="padding-left:3em">-Mister Sleezy<br /></span>
+                          <span style="padding-left:3em">-Mujihina</span>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        © 2015 LolChamp.net
+    </div>
+    <!-- 2nd page -->  <!-- Place LolChamp to left. Place Summoner Name above buttons. Place icon of Top 5 champs to right. -->
+    <nav class="menu push-menu-top">
+        <div class="top_container">
+            <div class="buttonTopCont"> <!-- Place buttons inside top header :D -->
+                <button type="button" class="nav-toggler toggle-slide-bottom buttons">Profile</button>
+                <button type="button" class="nav-toggler toggle-slide-bottom2 buttons">Matches</button>
+                <button type="button" class=" nav-toggler toggle-slide-bottom3 buttons">Stats</button>
+                <button type="button" class="nav-toggler toggle-slide-bottom4 buttons">Runes</button>
+                <button type="button" class="nav-toggler toggle-slide-bottom5 buttons">Masteries</button>
+            </div>
+        </div>
+
+    </nav>
+    <!-- profile page -->  <!-- Bar graph with choice of wins/losses, KDA, etc above ranked boxes. Add overall stats table on left with season and overall choice -->
+    <nav class="menu slide-menu-bottom" id="profile_page">
+        <!--<div class="top_container">
+            <button class="nav-toggler toggle-slide-bottom buttons" style="float:left; margin-top:8%; margin-left:23%">Profile</button>
+            <button class="nav-toggler toggle-slide-bottom2 buttons" style="float:left; margin-top:8%; margin-left:.25%">Matches</button>
+            <button class=" nav-toggler toggle-slide-bottom3 buttons" style="float:left; margin-top:8%; margin-left:.25%">Stats</button>
+            <button class="nav-toggler toggle-slide-bottom4 buttons" style="float:left; margin-top:8%; margin-left:.25%">Masteries</button>
+            <button class="nav-toggler toggle-slide-bottom5 buttons" style="float:left; margin-top:8%; margin-left:.25%">Runes</button>
+        </div>-->
+        <div class="page_container">
+            <div class="left_side_bar_profile" style="width:22.15%; border-left:none; border-right:none;">
+                <div class="hRankedSolo5x5" style="border-top:2px solid black">Ranked Solo Queue</div>
+                <table id="statsRankedSolo5x5" class="rankedStats"></table>
+                <div class="hRankedTeam5x5">Ranked Team 5x5</div>
+                <table id="statsRankedTeam5x5" class="rankedStats"></table>
+                <div class="hRankedTeam3x3">Ranked Team 3x3</div>
+                <table id="statsRankedTeam3x3" class="rankedStats"></table>
+                <div class="hUnranked">Normal 5x5</div>
+                <table id="statsUnranked" class="rankedStats"></table>
+                <div class="hCAP5x5">Team Builder 5x5</div>
+                <table id="statsCAP5x5" class="rankedStats"></table>
+                <div class="hUnranked3x3">Normal 3x3</div>
+                <table id="statsUnranked3x3" class="rankedStats"></table>
+                <div class="hAramUnranked5x5">Aram</div>
+                <table id="statsAramUnranked5x5" class="rankedStats"></table>
+            </div>
+            <div class="right_side_bar"></div>
+            <div class="profile_name_container">
+                <div class="name_container">
+                    <div id="summNameProfile" class="summoner_name"></div>
+                    <div>
+                        <img id="summIconImg" style="margin-top:5.75%; height:34.25%; width:34.25%" src="" />
+                    </div>
+                    <div style="font:bold 1.25em 'Trebuchet MS'; color:rgb(204, 204, 204); margin-top:3%">Level: <span id="summLevelProfile"></span></div>
+                    <!-- Could put primary lane based on most played champ -->
+                    <!-- or -->
+                    <!-- Could use match API to put top most played champs from past 10 games -->
+                </div>
+                <div class="best_champs_container">
+                    <div class="chart_title_container">
+                        <span style="color:#FFF; float:left; margin-left:1.5%; font-size: 1em; font-weight: bold">Top Champions</span>
+                        <span style="float:right; margin-right:1.5%; color:rgb(204, 204, 204)">Losses</span>
+                        <span class="legendBox" style="background:#ba3434; float:right"></span>
+                        <span style="float:right; margin-right:1.5%; color:rgb(204, 204, 204)">Wins</span>
+                        <span class="legendBox" style="background:#40c35f; float:right"></span>
+                        <span style="float:right; margin-right:1.5%; color:rgb(204, 204, 204)">Games</span>
+                        <span class="legendBox" style="background:#914CAF; float:right"></span>
+                    </div>
+                    <img id="topChamp0" src="" style="height:13.25%; width:11.1%; position:absolute; left:3.3%; margin-top:8.5%" /><div class="blue_line" style="margin-top:21.25%; width:100%"></div><div id="topPerc0" class="win_perc" style="margin-top:11%"></div>
+                    <img id="topChamp1" src="" style="height:13.25%; width:11.1%; position:absolute; left:3.3%; margin-top:23%" /><div class="blue_line" style="margin-top:35.75%; width:100%"></div><div id="topPerc1" class="win_perc" style="margin-top:25.5%"></div>
+                    <img id="topChamp2" src="" style="height:13.25%; width:11.1%; position:absolute; left:3.3%; margin-top:37.5%" /><div class="blue_line" style="margin-top:50.25%; width:100%"></div><div id="topPerc2" class="win_perc" style="margin-top:40%"></div>
+                    <img id="topChamp3" src="" style="height:13.25%; width:11.1%; position:absolute; left:3.3%; margin-top:52%" /><div class="blue_line" style="margin-top:64.75%; width:100%"></div><div id="topPerc3" class="win_perc" style="margin-top:54.5%"></div>
+                    <img id="topChamp4" src="" style="height:13.25%; width:11.1%; position:absolute; left:3.3%; margin-top:66.5%" /><div class="blue_line" style="margin-top:79.25%; width:100%"></div><div id="topPerc4" class="win_perc" style="margin-top:69%"></div>
+
+                    <a class="tooltip" style="height:13.4%;width:79%;position:absolute;right:3.5%; margin-top:8.75%">
+                        <!-- Add tooltip within tooltip displaying more info -->
+                        <span>
+                            <strong id="strong0"></strong>
+                            <span class="line1"></span>
+                            <span id="spanG0"></span><br /><span id="spanW0"></span><span id="spanL0"></span>
+                        </span>
+                    </a>
+                    <a class="tooltip" style="height:13.4%;width:79%;position:absolute;right:3.5%; margin-top:23.25%">
+                        <span>
+                            <strong id="strong1"></strong>
+                            <span class="line1"></span>
+                            <span id="spanG1"></span><br /><span id="spanW1"></span><span id="spanL1"></span>
+                        </span>
+                    </a>
+                    <a class="tooltip" style="height:13.4%;width:79%;position:absolute;right:3.5%; margin-top:37.75%">
+                        <span>
+                            <strong id="strong2"></strong>
+                            <span class="line1"></span>
+                            <span id="spanG2"></span><br /><span id="spanW2"></span><span id="spanL2"></span>
+                        </span>
+                    </a>
+                    <a class="tooltip" style="height:13.4%;width:79%;position:absolute;right:3.5%; margin-top:52.25%">
+                        <span>
+                            <strong id="strong3"></strong>
+                            <span class="line1"></span>
+                            <span id="spanG3"></span><br /><span id="spanW3"></span><span id="spanL3"></span>
+                        </span>
+                    </a>
+                    <a class="tooltip" style="height:13.4%;width:79%;position:absolute;right:3.5%; margin-top:66.75%">
+                        <span>
+                            <strong id="strong4"></strong>
+                            <span class="line1"></span>
+                            <span id="spanG4"></span><br /><span id="spanW4"></span><span id="spanL4"></span>
+                        </span>
+                    </a>
+                    <div class="ct-chart"></div>
+                </div>
+            </div>
+            <div class="profile_container">
+                <!-- Give each container LOL loading screen border depending on rank -->
+                <div class="ranked_container" style="margin-right:.04%; margin-left:.5%">
+                    <div class="ranked_container_title"><h2 style="line-height:65%"><span id="r3queue"></span></h2></div>
+                    <img id="r3img" src="" style="width:72.5%; margin-top:-3.75%" />
+                    <div style="font:bold 1.5625rem 'Trebuchet MS'; transform:translateY(-52%)"><span id="r3tier"></span> <span id="r3div"></span></div>
+                    <div style="color: rgb(204, 204, 204); transform:translateY(-85%)"><span id="r3lp"></span></div>
+                    <div style="font:bold 1.25em 'Trebuchet MS'; color:#6C0; line-height:75%"><span id="r3wins"></span></div>
+                    <div style="font:bold 1.25em 'trebuchet MS'; color:#D20; line-height:175%"><span id="r3losses"></span></div>
+                    <div style="color: rgb(204, 204, 204); line-height:95%"><span id="r3winratio"></span></div>
+                </div>
+                <div class="ranked_container" style="margin-right:.04%">
+                    <div class="ranked_container_title"><h2 style="line-height:65%"><span id="r1queue"></span></h2></div>
+                    <img id="r1img" src="" style="width:72.5%; margin-top:-3.75%" /><br />
+                    <div style="font:bold 1.5625rem 'Trebuchet MS'; transform:translateY(-52%)"><span id="r1tier"></span> <span id="r1div"></span></div>
+                    <div style="color: rgb(204, 204, 204); transform:translateY(-85%)"><span id="r1lp"></span></div>
+                    <div style="font:bold 1.25em 'Trebuchet MS'; color:#6C0; line-height:75%"><span id="r1wins"></span></div>
+                    <div style="font:bold 1.25em 'trebuchet MS'; color:#D20; line-height:175%"><span id="r1losses"></span></div>
+                    <div style="color: rgb(204, 204, 204); line-height:95%"><span id="r1winratio"></span></div>
+                </div>
+                <div class="ranked_container" style="">
+                    <div class="ranked_container_title"><h2 style="line-height:65%"><span id="r5queue"></span></h2></div>
+                    <img id="r5img" src="" style="width:72.5%; margin-top:-3.75%" /><br />
+                    <div style="font:bold 1.5625rem 'Trebuchet MS'; transform:translateY(-52%)"><span id="r5tier"></span> <span id="r5div"></span></div>
+                    <div style="color: rgb(204, 204, 204); transform:translateY(-85%)"><span id="r5lp"></span></div>
+                    <div style="font:bold 1.25em 'Trebuchet MS'; color:#6C0; line-height:75%"><span id="r5wins"></span></div>
+                    <div style="font:bold 1.25em 'trebuchet MS'; color:#D20; line-height:175%"><span id="r5losses"></span></div>
+                    <div style="color: rgb(204, 204, 204); line-height:95%"><span id="r5winratio"></span></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Match History Page -->  <!-- Could add something to save a match. So the database will record that matchID then use it in another form to give match stats -->
+    <nav class="menu slide-menu-bottom2" id="matches_page">
+        <div class="page_container">
+            <!-- Maybe put recent KDA and W/L for past 10 games on right side -->
+            <div class="left_side_bar_match" style="width:20.15%; height:auto; transform: translateX(4%)">
+                <div class="left_side_bar_title">Matches</div>
+                <div class="chart2_legend" style="margin-top:3.2%; width:26%">
+                    <span class="legendBoxMatch" style="float:left; background:#40c35f"></span><span style="float:left; margin-top:6%">Wins</span><br />
+                    <span class="legendBoxMatch" style="margin-top:10%; position:absolute; left:0; background:#ba3434"></span>
+                    <span style="margin-top:13%; position:absolute; transform:translateX(13%)">Losses</span>
+                </div>
+                <div class="ct-chart21"></div>
+                <div style="margin:1.5%; color:rgb(204, 204, 204); transform:translateX(-11.75%)">10G <span id="mChartW"></span>W <span id="mChartL"></span>L</div>
+                <div class="left_side_bar_title">K/D/A</div>
+                <div class="chart2_legend" style="margin-top:3.2%; width:26%">
+                    <span class="legendBoxMatch" style="float:left; background:#40c35f"></span><span style="float:left; margin-top:6%">Kills</span><br />
+                    <span class="legendBoxMatch" style="margin-top:10%; position:absolute; left:0; background:#ba3434"></span><span style="margin-top:13%; position:absolute; transform:translateX(14%)">Deaths</span>
+                    <span class="legendBoxMatch" style="margin-top:40%; position:absolute; left:0; background:#c7a413"></span><span style="margin-top:43%; position:absolute; transform:translateX(18%)">Assists</span>
+                </div>
+                <div class="ct-chart22"></div>
+                <div style="margin:1.5%; color:rgb(204, 204, 204); transform:translateX(-11.75%)"><span id="mChartK"></span>K / <span id="mChartD"></span>D / <span id="mChartA"></span>A</div>
+                <div class="left_side_bar_title">(Recent Statistics (Avg</div>
+                <div class="recentStats"><div class="recentStatName">:Kills</div><div id="recentKills" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Deaths</div><div id="recentDeaths" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Assists</div><div id="recentAssists" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:KDA Ratio</div><div id="recentKDA" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:KD Ratio</div><div id="recentKD" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Minion Kills</div><div id="recentMinions" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Gold</div><div id="recentGold" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Gold Per Min</div><div id="recentGPM" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Turret Kills</div><div id="recentTurretKills" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:(Damage (C</div><div id="recentDmgC" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Total Damage</div><div id="recentDmgT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Damage Taken</div><div id="recentDmgTaken" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Wards Placed</div><div id="recentWardsPlaced" class="recentStatNum"></div></div>
+                <div class="recentStats" style="border-bottom:1px solid transparent"><div class="recentStatName">:Wards Killed</div><div id="recentWardsKilled" class="recentStatNum"></div></div>
+                <div class="left_side_bar_title">(Recent Statistics (Total</div>
+                <div class="recentStats"><div class="recentStatName">:Minion Kills</div><div id="recentMinionsT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Gold</div><div id="recentGoldT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Wards Placed</div><div id="recentWardsPlacedT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Wards Killed</div><div id="recentWardsKilledT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Turret Kills</div><div id="recentTurretKillsT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Barrack Kills</div><div id="recentBarrKillsT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:(Damage (C</div><div id="recentDmgCT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Total Damage</div><div id="recentDmgTT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Damage Taken</div><div id="recentDmgTakenT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:First Bloods</div><div id="recentFBT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Double Kills</div><div id="recentDbKillsT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Triple Kills</div><div id="recentTpKillsT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Quadra Kills</div><div id="recentQdKillsT" class="recentStatNum"></div></div>
+                <div class="recentStats"><div class="recentStatName">:Penta Kills</div><div id="recentPtKillsT" class="recentStatNum"></div></div>
+            </div>
+            <div class="right_side_bar"></div>
+            <div class="match_container_big" style="z-index:10; transform:translateY(-2.35%)">
+                <div class="match_container_big2"></div>
+                <div class="match_container">
+                    <div class="match_info_holder0"></div>
+                    <div class="champ_spell_container_holder0"></div>
+                    <div class="item_container">
+                        <div style="width:46.5%; height:100%; float:left">
+                            <img id="item00" class="item_img" style="float:left; margin-left:6%; margin-top:13%" />
+                            <img id="item10" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                            <img id="item20" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                            <img id="item30" class="item_img" style="float:left; margin-left:6%; margin-top:6%"  />
+                            <img id="item40" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                            <img id="item50" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                        </div>
+                        <div style="width:52%; height:100%; float:right">
+                            <div class="win_loss_container" style="transform:translateX(-2.5%)">
+                                <!-- Victory or Defeat -->
+                                <span style="font:bold 2.1875em 'Trebuchet MS'"><span id="win0"></span></span><br />
+                                <div style="color:goldenrod; font: bold 1.5625em 'Trebuchet MS'; line-height:180%"><span id="KDA0"></span></div>
+                                <div style="color:rgb(204, 204, 204); line-height:0">K / D / A</div>
+                            </div>
+                            <button type="button" class="nav-toggler toggle-push-top2 drop_down_button" style="transform:translateX(-3%); margin-top:4%"><img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /></button>
+                        </div>
+                    </div>
+                    <div class="simple_stats_container">
+                        <span style="line-height:225%">Level <span id="level0"></span></span><br />
+                        <span class="stat_left0"><span id="goldEarned0"></span></span>
+                        <span class="stat_right0"><span id="goldPerMin0"></span></span><br /><br />
+                        <span class="stat_left1"><span id="totalMinionsKilled0"></span></span>
+                        <span class="stat_right1"><span id="minionsKilledPerTenMin0"></span></span><br /><!-- Do we want CS/Min or should we switch it with something else? -->
+                        <span class="stat_left2"><span id="totalDamageDealtToChampions0"></span></span>
+                        <span class="stat_right2"><span id="totalDamageDealt0"></span></span>
+                    </div>
+                    <nav class="menu push-menu-top2">
+                        <!-- Add rank of each player by saving summonerID's of all players retrieved from game api and using them all together in league api -->
+                        <div class="playerHolder0"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Push content down and slide match details in from right or left -->
+            <div id="wrapper2">
+                <div class="match_container_big" style="z-index:9">
+                    <div class="match_container_big2"></div>
+                    <div class="match_container">
+                        <div class="match_info_holder1"></div>
+                        <div class="champ_spell_container_holder0"></div>
+                        <div class="item_container">
+                            <div style="width:46.5%; height:100%; float:left">
+                                <img id="item01" class="item_img" style="float:left; margin-left:6%; margin-top:13%" />
+                                <img id="item11" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                <img id="item21" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                <img id="item31" class="item_img" style="float:left; margin-left:6%; margin-top:6%" />
+                                <img id="item41" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                <img id="item51" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                            </div>
+                            <div style="width:52%; height:100%; float:right">
+                                <div class="win_loss_container" style="transform:translateX(-2.5%)">
+                                    <!-- Victory or Defeat -->
+                                    <span style="font:bold 2.1875em 'Trebuchet MS'"><span id="win1"></span></span><br />
+                                    <div style="color:goldenrod; font: bold 1.5625em 'Trebuchet MS'; line-height:180%"><span id="KDA1"></span></div>
+                                    <div style="color:rgb(204, 204, 204); line-height:0">K / D / A</div>
+                                </div>
+                                <button type="button" class="nav-toggler toggle-push-top3 drop_down_button" style="transform:translateX(-3%); margin-top:4%"><img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /></button>
+                            </div>
+                        </div>
+                        <div class="simple_stats_container">
+                            <span style="line-height:225%">Level <span id="level1"></span></span><br />
+                            <span class="stat_left0"><span id="goldEarned1"></span></span>
+                            <span class="stat_right0"><span id="goldPerMin1"></span></span><br /><br />
+                            <span class="stat_left1"><span id="totalMinionsKilled1"></span></span>
+                            <span class="stat_right1"><span id="minionsKilledPerTenMin1"></span></span><br /><!-- Do we want CS/Min or should we switch it with something else? -->
+                            <span class="stat_left2"><span id="totalDamageDealtToChampions1"></span></span>
+                            <span class="stat_right2"><span id="totalDamageDealt1"></span></span>
+                        </div>
+                        <nav class="menu push-menu-top3">
+                            <div class="playerHolder1"></div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div id="wrapper3">
+                    <div class="match_container_big" style="z-index:8">
+                        <div class="match_container_big2"></div>
+                        <div class="match_container">
+                            <div class="match_info_holder2"></div>
+                            <div class="champ_spell_container_holder0"></div>
+                            <div class="item_container">
+                                <div style="width:46.5%; height:100%; float:left">
+                                    <img id="item02" class="item_img" style="float:left; margin-left:6%; margin-top:13%" />
+                                    <img id="item12" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                    <img id="item22" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                    <img id="item32" class="item_img" style="float:left; margin-left:6%; margin-top:6%" />
+                                    <img id="item42" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                    <img id="item52" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                </div>
+                                <div style="width:52%; height:100%; float:right">
+                                    <div class="win_loss_container" style="transform:translateX(-2.5%)">
+                                        <!-- Victory or Defeat -->
+                                        <span style="font:bold 2.1875em 'Trebuchet MS'"><span id="win2"></span></span><br />
+                                        <div style="color:goldenrod; font: bold 1.5625em 'Trebuchet MS'; line-height:180%"><span id="KDA2"></span></div>
+                                        <div style="color:rgb(204, 204, 204); line-height:0">K / D / A</div>
+                                    </div>
+                                    <button type="button" class="nav-toggler toggle-push-top4 drop_down_button" style="transform:translateX(-3%); margin-top:4%"><img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /></button>
+                                </div>
+                            </div>
+                            <div class="simple_stats_container">
+                                <span style="line-height:225%">Level <span id="level2"></span></span><br />
+                                <span class="stat_left0"><span id="goldEarned2"></span></span>
+                                <span class="stat_right0"><span id="goldPerMin2"></span></span><br /><br />
+                                <span class="stat_left1"><span id="totalMinionsKilled2"></span></span>
+                                <span class="stat_right1"><span id="minionsKilledPerTenMin2"></span></span><br /><!-- Do we want CS/Min or should we switch it with something else? -->
+                                <span class="stat_left2"><span id="totalDamageDealtToChampions2"></span></span>
+                                <span class="stat_right2"><span id="totalDamageDealt2"></span></span>
+                            </div>
+                            <nav class="menu push-menu-top4">
+                                <div class="playerHolder2"></div>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div id="wrapper4">
+                        <div class="match_container_big" style="z-index:7">
+                            <div class="match_container_big2"></div>
+                            <div class="match_container">
+                                <div class="match_info_holder3"></div>
+                                <div class="champ_spell_container_holder0"></div>
+                                <div class="item_container">
+                                    <div style="width:46.5%; height:100%; float:left">
+                                        <img id="item03" class="item_img" style="float:left; margin-left:6%; margin-top:13%" />
+                                        <img id="item13" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                        <img id="item23" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                        <img id="item33" class="item_img" style="float:left; margin-left:6%; margin-top:6%" />
+                                        <img id="item43" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                        <img id="item53" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                    </div>
+                                    <div style="width:52%; height:100%; float:right">
+                                        <div class="win_loss_container" style="transform:translateX(-2.5%)">
+                                            <!-- Victory or Defeat -->
+                                            <span style="font:bold 2.1875em 'Trebuchet MS'"><span id="win3"></span></span><br />
+                                            <div style="color:goldenrod; font: bold 1.5625em 'Trebuchet MS'; line-height:180%"><span id="KDA3"></span></div>
+                                            <div style="color:rgb(204, 204, 204); line-height:0">K / D / A</div>
+                                        </div>
+                                        <button type="button" class="nav-toggler toggle-push-top5 drop_down_button" style="transform:translateX(-3%); margin-top:4%"><img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /></button>
+                                    </div>
+                                </div>
+                                <div class="simple_stats_container">
+                                    <span style="line-height:225%">Level <span id="level3"></span></span><br />
+                                    <span class="stat_left0"><span id="goldEarned3"></span></span>
+                                    <span class="stat_right0"><span id="goldPerMin3"></span></span><br /><br />
+                                    <span class="stat_left1"><span id="totalMinionsKilled3"></span></span>
+                                    <span class="stat_right1"><span id="minionsKilledPerTenMin3"></span></span><br /><!-- Do we want CS/Min or should we switch it with something else? -->
+                                    <span class="stat_left2"><span id="totalDamageDealtToChampions3"></span></span>
+                                    <span class="stat_right2"><span id="totalDamageDealt3"></span></span>
+                                </div>
+                                <nav class="menu push-menu-top5">
+                                    <div class="playerHolder3"></div>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div id="wrapper5">
+                            <div class="match_container_big" style="z-index:6">
+                                <div class="match_container_big2"></div>
+                                <div class="match_container">
+                                    <div class="match_info_holder4"></div>
+                                    <div class="champ_spell_container_holder0"></div>
+                                    <div class="item_container">
+                                        <div style="width:46.5%; height:100%; float:left">
+                                            <img id="item04" class="item_img" style="float:left; margin-left:6%; margin-top:13%" />
+                                            <img id="item14" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                            <img id="item24" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                            <img id="item34" class="item_img" style="float:left; margin-left:6%; margin-top:6%" />
+                                            <img id="item44" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                            <img id="item54" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                        </div>
+                                        <div style="width:52%; height:100%; float:right">
+                                            <div class="win_loss_container" style="transform:translateX(-2.5%)">
+                                                <!-- Victory or Defeat -->
+                                                <span style="font:bold 2.1875em 'Trebuchet MS'"><span id="win4"></span></span><br />
+                                                <div style="color:goldenrod; font: bold 1.5625em 'Trebuchet MS'; line-height:180%"><span id="KDA4"></span></div>
+                                                <div style="color:rgb(204, 204, 204); line-height:0">K / D / A</div>
+                                            </div>
+                                            <button type="button" class="nav-toggler toggle-push-top6 drop_down_button" style="transform:translateX(-3%); margin-top:4%"><img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /></button>
+                                        </div>
+                                    </div>
+                                    <div class="simple_stats_container">
+                                        <span style="line-height:225%">Level <span id="level4"></span></span><br />
+                                        <span class="stat_left0"><span id="goldEarned4"></span></span>
+                                        <span class="stat_right0"><span id="goldPerMin4"></span></span><br /><br />
+                                        <span class="stat_left1"><span id="totalMinionsKilled4"></span></span>
+                                        <span class="stat_right1"><span id="minionsKilledPerTenMin4"></span></span><br /><!-- Do we want CS/Min or should we switch it with something else? -->
+                                        <span class="stat_left2"><span id="totalDamageDealtToChampions4"></span></span>
+                                        <span class="stat_right2"><span id="totalDamageDealt4"></span></span>
+                                    </div>
+                                    <nav class="menu push-menu-top6">
+                                        <div class="playerHolder4"></div>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <div id="wrapper6">
+                                <div class="match_container_big" style="z-index:5">
+                                    <div class="match_container_big2"></div>
+                                    <div class="match_container">
+                                        <div class="match_info_holder5"></div>
+                                        <div class="champ_spell_container_holder0"></div>
+                                        <div class="item_container">
+                                            <div style="width:46.5%; height:100%; float:left">
+                                                <img id="item05" class="item_img" style="float:left; margin-left:6%; margin-top:13%" />
+                                                <img id="item15" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                                <img id="item25" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                                <img id="item35" class="item_img" style="float:left; margin-left:6%; margin-top:6%" />
+                                                <img id="item45" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                                <img id="item55" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                            </div>
+                                            <div style="width:52%; height:100%; float:right">
+                                                <div class="win_loss_container" style="transform:translateX(-2.5%)">
+                                                    <!-- Victory or Defeat -->
+                                                    <span style="font:bold 2.1875em 'Trebuchet MS'"><span id="win5"></span></span><br />
+                                                    <div style="color:goldenrod; font: bold 1.5625em 'Trebuchet MS'; line-height:180%"><span id="KDA5"></span></div>
+                                                    <div style="color:rgb(204, 204, 204); line-height:0">K / D / A</div>
+                                                </div>
+                                                <button type="button" class="nav-toggler toggle-push-top7 drop_down_button" style="transform:translateX(-3%); margin-top:4%"><img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /></button>
+                                            </div>
+                                        </div>
+                                        <div class="simple_stats_container">
+                                            <span style="line-height:225%">Level <span id="level5"></span></span><br />
+                                            <span class="stat_left0"><span id="goldEarned5"></span></span>
+                                            <span class="stat_right0"><span id="goldPerMin5"></span></span><br /><br />
+                                            <span class="stat_left1"><span id="totalMinionsKilled5"></span></span>
+                                            <span class="stat_right1"><span id="minionsKilledPerTenMin5"></span></span><br /><!-- Do we want CS/Min or should we switch it with something else? -->
+                                            <span class="stat_left2"><span id="totalDamageDealtToChampions5"></span></span>
+                                            <span class="stat_right2"><span id="totalDamageDealt5"></span></span>
+                                        </div>
+                                        <nav class="menu push-menu-top7">
+                                            <div class="playerHolder5"></div>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                                <div id="wrapper7">
+                                    <div class="match_container_big" style="z-index:4">
+                                        <div class="match_container_big2"></div>
+                                        <div class="match_container">
+                                            <div class="match_info_holder6"></div>
+                                            <div class="champ_spell_container_holder0"></div>
+                                            <div class="item_container">
+                                                <div style="width:46.5%; height:100%; float:left">
+                                                    <img id="item06" class="item_img" style="float:left; margin-left:6%; margin-top:13%" />
+                                                    <img id="item16" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                                    <img id="item26" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                                    <img id="item36" class="item_img" style="float:left; margin-left:6%; margin-top:6%" />
+                                                    <img id="item46" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                                    <img id="item56" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                                </div>
+                                                <div style="width:52%; height:100%; float:right">
+                                                    <div class="win_loss_container" style="transform:translateX(-2.5%)">
+                                                        <!-- Victory or Defeat -->
+                                                        <span style="font:bold 2.1875em 'Trebuchet MS'"><span id="win6"></span></span><br />
+                                                        <div style="color:goldenrod; font: bold 1.5625em 'Trebuchet MS'; line-height:180%"><span id="KDA6"></span></div>
+                                                        <div style="color:rgb(204, 204, 204); line-height:0">K / D / A</div>
+                                                    </div>
+                                                    <button type="button" class="nav-toggler toggle-push-top8 drop_down_button" style="transform:translateX(-3%); margin-top:4%"><img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /></button>
+                                                </div>
+                                            </div>
+                                            <div class="simple_stats_container">
+                                                <span style="line-height:225%">Level <span id="level6"></span></span><br />
+                                                <span class="stat_left0"><span id="goldEarned6"></span></span>
+                                                <span class="stat_right0"><span id="goldPerMin6"></span></span><br /><br />
+                                                <span class="stat_left1"><span id="totalMinionsKilled6"></span></span>
+                                                <span class="stat_right1"><span id="minionsKilledPerTenMin6"></span></span><br /><!-- Do we want CS/Min or should we switch it with something else? -->
+                                                <span class="stat_left2"><span id="totalDamageDealtToChampions6"></span></span>
+                                                <span class="stat_right2"><span id="totalDamageDealt6"></span></span>
+                                            </div>
+                                            <nav class="menu push-menu-top8">
+                                                <div class="playerHolder6"></div>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+                                    <div id="wrapper8">
+                                        <div class="match_container_big" style="z-index:3">
+                                            <div class="match_container_big2"></div>
+                                            <div class="match_container">
+                                                <div class="match_info_holder7"></div>
+                                                <div class="champ_spell_container_holder0"></div>
+                                                <div class="item_container">
+                                                    <div style="width:46.5%; height:100%; float:left">
+                                                        <img id="item07" class="item_img" style="float:left; margin-left:6%; margin-top:13%" />
+                                                        <img id="item17" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                                        <img id="item27" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                                        <img id="item37" class="item_img" style="float:left; margin-left:6%; margin-top:6%" />
+                                                        <img id="item47" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                                        <img id="item57" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                                    </div>
+                                                    <div style="width:52%; height:100%; float:right">
+                                                        <div class="win_loss_container" style="transform:translateX(-2.5%)">
+                                                            <!-- Victory or Defeat -->
+                                                            <span style="font:bold 2.1875em 'Trebuchet MS'"><span id="win7"></span></span><br />
+                                                            <div style="color:goldenrod; font: bold 1.5625em 'Trebuchet MS'; line-height:180%"><span id="KDA7"></span></div>
+                                                            <div style="color:rgb(204, 204, 204); line-height:0">K / D / A</div>
+                                                        </div>
+                                                        <button type="button" class="nav-toggler toggle-push-top9 drop_down_button" style="transform:translateX(-3%); margin-top:4%"><img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /></button>
+                                                    </div>
+                                                </div>
+                                                <div class="simple_stats_container">
+                                                    <span style="line-height:225%">Level <span id="level7"></span></span><br />
+                                                    <span class="stat_left0"><span id="goldEarned7"></span></span>
+                                                    <span class="stat_right0"><span id="goldPerMin7"></span></span><br /><br />
+                                                    <span class="stat_left1"><span id="totalMinionsKilled7"></span></span>
+                                                    <span class="stat_right1"><span id="minionsKilledPerTenMin7"></span></span><br /><!-- Do we want CS/Min or should we switch it with something else? -->
+                                                    <span class="stat_left2"><span id="totalDamageDealtToChampions7"></span></span>
+                                                    <span class="stat_right2"><span id="totalDamageDealt7"></span></span>
+                                                </div>
+                                                <nav class="menu push-menu-top9">
+                                                    <div class="playerHolder7"></div>
+                                                </nav>
+                                            </div>
+                                        </div>
+
+                                        <div id="wrapper9">
+                                            <div class="match_container_big" style="z-index:2">
+                                                <div class="match_container_big2"></div>
+                                                <div class="match_container">
+                                                    <div class="match_info_holder8"></div>
+                                                    <div class="champ_spell_container_holder0"></div>
+                                                    <div class="item_container">
+                                                        <div style="width:46.5%; height:100%; float:left">
+                                                            <img id="item08" class="item_img" style="float:left; margin-left:6%; margin-top:13%" />
+                                                            <img id="item18" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                                            <img id="item28" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                                            <img id="item38" class="item_img" style="float:left; margin-left:6%; margin-top:6%" />
+                                                            <img id="item48" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                                            <img id="item58" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                                        </div>
+                                                        <div style="width:52%; height:100%; float:right">
+                                                            <div class="win_loss_container" style="transform:translateX(-2.5%)">
+                                                                <!-- Victory or Defeat -->
+                                                                <span style="font:bold 2.1875em 'Trebuchet MS'"><span id="win8"></span></span><br />
+                                                                <div style="color:goldenrod; font: bold 1.5625em 'Trebuchet MS'; line-height:180%"><span id="KDA8"></span></div>
+                                                                <div style="color:rgb(204, 204, 204); line-height:0">K / D / A</div>
+                                                            </div>
+                                                            <button type="button" class="nav-toggler toggle-push-top10 drop_down_button" style="transform:translateX(-3%); margin-top:4%"><img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="simple_stats_container">
+                                                        <span style="line-height:225%">Level <span id="level8"></span></span><br />
+                                                        <span class="stat_left0"><span id="goldEarned8"></span></span>
+                                                        <span class="stat_right0"><span id="goldPerMin8"></span></span><br /><br />
+                                                        <span class="stat_left1"><span id="totalMinionsKilled8"></span></span>
+                                                        <span class="stat_right1"><span id="minionsKilledPerTenMin8"></span></span><br /><!-- Do we want CS/Min or should we switch it with something else? -->
+                                                        <span class="stat_left2"><span id="totalDamageDealtToChampions8"></span></span>
+                                                        <span class="stat_right2"><span id="totalDamageDealt8"></span></span>
+                                                    </div>
+                                                    <nav class="menu push-menu-top10">
+                                                        <div class="playerHolder8"></div>
+                                                    </nav>
+                                                </div>
+                                            </div>
+
+                                            <div id="wrapper10">
+                                                <div class="match_container_big" style="z-index:1">
+                                                    <div class="match_container_big2"></div>
+                                                    <div class="match_container">
+                                                        <div class="match_info_holder9"></div>
+                                                        <div class="champ_spell_container_holder0"></div>
+                                                        <div class="item_container">
+                                                            <div style="width:46.5%; height:100%; float:left">
+                                                                <img id="item09" class="item_img" style="float:left; margin-left:6%; margin-top:13%" />
+                                                                <img id="item19" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                                                <img id="item29" class="item_img" style="float:left; margin-left:3%; margin-top:13%" />
+                                                                <img id="item39" class="item_img" style="float:left; margin-left:6%; margin-top:6%" />
+                                                                <img id="item49" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                                                <img id="item59" class="item_img" style="float:left; margin-left:3%; margin-top:6%" />
+                                                            </div>
+                                                            <div style="width:52%; height:100%; float:right">
+                                                                <div class="win_loss_container" style="transform:translateX(-2.5%)">
+                                                                    <!-- Victory or Defeat -->
+                                                                    <span style="font:bold 2.1875em 'Trebuchet MS'"><span id="win9"></span></span><br />
+                                                                    <div style="color:goldenrod; font: bold 1.5625em 'Trebuchet MS'; line-height:180%"><span id="KDA9"></span></div>
+                                                                    <div style="color:rgb(204, 204, 204); line-height:0">K / D / A</div>
+                                                                </div>
+                                                                <button type="button" class="nav-toggler toggle-push-top11 drop_down_button" style="transform:translateX(-3%); margin-top:4%"><img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /> <img src="Images/chevron-down.png" class="chevron" /></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="simple_stats_container">
+                                                            <span style="line-height:225%">Level <span id="level9"></span></span><br />
+                                                            <span class="stat_left0"><span id="goldEarned9"></span></span>
+                                                            <span class="stat_right0"><span id="goldPerMin9"></span></span><br /><br />
+                                                            <span class="stat_left1"><span id="totalMinionsKilled9"></span></span>
+                                                            <span class="stat_right1"><span id="minionsKilledPerTenMin9"></span></span><br /><!-- Do we want CS/Min or should we switch it with something else? -->
+                                                            <span class="stat_left2"><span id="totalDamageDealtToChampions9"></span></span>
+                                                            <span class="stat_right2"><span id="totalDamageDealt9"></span></span>
+                                                        </div>
+                                                        <nav class="menu push-menu-top11">
+                                                            <div class="playerHolder9"></div>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Games Templates -->
+    <div class="mi_template0" style="display:none">
+        <div class="match_info">
+            <div class="filler winLine"></div>
+            <span style="background:linear-gradient(#121217,#000); float:left; margin-left:1.7857%"><span class="gameType"></span></span>
+            <span class="createDate" style="margin-left:-33.33333%"></span>
+            <span style="float:right; margin-right:1.7857%">Duration: <span class="timePlayed"></span></span>
+        </div>
+    </div>
+    <div class="csc_template0" style="display:none">
+        <div class="champ_spell_container">
+            <img id="champImgHistory" src="" style="width:59.5238%; margin-top:12.5%; margin-left:6%" />
+            <img id="summSpell1" src="" class="summoner_spell_img" style="transform:translateY(46%)" />
+            <img id="summSpell2" src="" class="summoner_spell_img" style="transform:translateY(-110%)" />
+        </div>
+    </div>
+    <div class="mi_template1" style="display:none">
+        <div class="match_info">
+            <div class="filler winLine"></div>
+            <span style="background:linear-gradient(#121217,#000); float:left; margin-left:-18.21429%"><span class="gameType"></span></span>
+            <span class="createDate" style="float: left; margin-left:1.7857%"></span>
+            <span style="float:right; margin-right:1.7857%">Duration: <span class="timePlayed"></span></span>
+        </div>
+    </div>
+    <!-- 5x5 Match Template -->
+    <div class="playerTemplate5x5" style="display:none">
+        <table style="color:white; width:100%; transform:translateX(-0.595%); white-space:nowrap">
+            <tr style="font-size:0.875em; color:rgb(204, 204, 204)">
+                <td></td>
+                <td>Summoner</td>
+                <td>League</td>
+                <td><span class="win0" style="font:bold 1.5625rem 'Trebuchet MS'; margin-right:8.2781%"></span></td>
+                <td style="margin-right:10%">K/D/A</td>
+                <td style="margin-right:10%">CS</td>
+                <td style="transform:translateX(-4%)">Gold</td>
+                <td>Damage</td>
+                <td>Wards</td>
+            </tr>
+            <tr>
+                <td><img id="champ0ImgMatch" src="" class="champImgMatch" /><img id="0summ1" src="" class="summ1Match" /><img align="top" id="0summ2" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName0 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel0"></span></sup></span></td>
+                <td class="league0 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player0Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player0Item1" class="playerItemMatch" />
+                    <img id="player0Item2" class="playerItemMatch" />
+                    <img id="player0Item3" class="playerItemMatch" />
+                    <img id="player0Item4" class="playerItemMatch" />
+                    <img id="player0Item5" class="playerItemMatch" />
+                    <img id="player0Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA0"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled0"></span></td>
+                <td class="gold"><span class="goldEarned0"></span></td>
+                <td><span class="playerDamageToChamps0"></span></td>
+                <td><span class="playerWardsPlaced0" style="color:#6C0"></span> / <span class="playerWardsKilled0" style="color:#D20"></span></td>
+            </tr>
+            <tr>
+                <td><img id="champ1ImgMatch" src="" class="champImgMatch" /><img id="1summ1" src="" class="summ1Match" /><img id="1summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName1 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel1"></span></sup></span></td>
+                <td class="league1 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player1Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player1Item1" class="playerItemMatch" />
+                    <img id="player1Item2" class="playerItemMatch" />
+                    <img id="player1Item3" class="playerItemMatch" />
+                    <img id="player1Item4" class="playerItemMatch" />
+                    <img id="player1Item5" class="playerItemMatch" />
+                    <img id="player1Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA1"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled1"></span></td>
+                <td class="gold"><span class="goldEarned1"></span></td>
+                <td><span class="playerDamageToChamps1"></span></td>
+                <td><span class="playerWardsPlaced1" style="color:#6C0"></span> / <span class="playerWardsKilled1" style="color:#D20"></span></td>
+            </tr>
+            <tr>
+                <td><img id="champ2ImgMatch" src="" class="champImgMatch" /><img id="2summ1" src="" class="summ1Match" /><img id="2summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName2 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel2"></span></sup></span></td>
+                <td class="league2 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player2Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player2Item1" class="playerItemMatch" />
+                    <img id="player2Item2" class="playerItemMatch" />
+                    <img id="player2Item3" class="playerItemMatch" />
+                    <img id="player2Item4" class="playerItemMatch" />
+                    <img id="player2Item5" class="playerItemMatch" />
+                    <img id="player2Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA2"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled2"></span></td>
+                <td class="gold"><span class="goldEarned2"></span></td>
+                <td><span class="playerDamageToChamps2"></span></td>
+                <td><span class="playerWardsPlaced2" style="color:#6C0"></span> / <span class="playerWardsKilled2" style="color:#D20"></span></td>
+            </tr>
+            <tr>
+                <td><img id="champ3ImgMatch" src="" class="champImgMatch" /><img id="3summ1" src="" class="summ1Match" /><img id="3summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName3 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel3"></span></sup></span></td>
+                <td class="league3 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player3Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player3Item1" class="playerItemMatch" />
+                    <img id="player3Item2" class="playerItemMatch" />
+                    <img id="player3Item3" class="playerItemMatch" />
+                    <img id="player3Item4" class="playerItemMatch" />
+                    <img id="player3Item5" class="playerItemMatch" />
+                    <img id="player3Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA3"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled3"></span></td>
+                <td class="gold"><span class="goldEarned3"></span></td>
+                <td><span class="playerDamageToChamps3"></span></td>
+                <td><span class="playerWardsPlaced3" style="color:#6C0"></span> / <span class="playerWardsKilled3" style="color:#D20"></span></td>
+            </tr>
+            <tr>
+                <td><img id="champ4ImgMatch" src="" class="champImgMatch" /><img id="4summ1" src="" class="summ1Match" /><img id="4summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName4 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel4"></span></sup></span></td>
+                <td class="league4 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player4Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player4Item1" class="playerItemMatch" />
+                    <img id="player4Item2" class="playerItemMatch" />
+                    <img id="player4Item3" class="playerItemMatch" />
+                    <img id="player4Item4" class="playerItemMatch" />
+                    <img id="player4Item5" class="playerItemMatch" />
+                    <img id="player4Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA4"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled4"></span></td>
+                <td class="gold"><span class="goldEarned4"></span></td>
+                <td><span class="playerDamageToChamps4"></span></td>
+                <td><span class="playerWardsPlaced4" style="color:#6C0"></span> / <span class="playerWardsKilled4" style="color:#D20"></span></td>
+            </tr>
+            <!-- Team 2 -->
+            <tr style="font-size:0.875em; color:rgb(204, 204, 204)">
+                <td></td>
+                <td>Summoner</td>
+                <td>League</td>
+                <td><span class="win1" style="font:bold 1.5625rem 'Trebuchet MS'; margin-right:8.2781%"></span></td>
+                <td style="margin-right:10%">K/D/A</td>
+                <td style="margin-right:10%">CS</td>
+                <td style="transform:translateX(-4%)">Gold</td>
+                <td>Damage</td>
+                <td>Wards</td>
+            </tr>
+            <tr>
+                <td><img id="champ5ImgMatch" src="" class="champImgMatch" /><img id="5summ1" src="" class="summ1Match" /><img id="5summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName5 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel5"></span></sup></span></td>
+                <td class="league5 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player5Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player5Item1" class="playerItemMatch" />
+                    <img id="player5Item2" class="playerItemMatch" />
+                    <img id="player5Item3" class="playerItemMatch" />
+                    <img id="player5Item4" class="playerItemMatch" />
+                    <img id="player5Item5" class="playerItemMatch" />
+                    <img id="player5Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA5"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled5"></span></td>
+                <td class="gold"><span class="goldEarned5"></span></td>
+                <td><span class="playerDamageToChamps5"></span></td>
+                <td><span class="playerWardsPlaced5" style="color:#6C0"></span> / <span class="playerWardsKilled5" style="color:#D20"></span></td>
+            </tr>
+            <tr>
+                <td><img id="champ6ImgMatch" src="" class="champImgMatch" /><img id="6summ1" src="" class="summ1Match" /><img id="6summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName6 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel6"></span></sup></span></td>
+                <td class="league6 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player6Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player6Item1" class="playerItemMatch" />
+                    <img id="player6Item2" class="playerItemMatch" />
+                    <img id="player6Item3" class="playerItemMatch" />
+                    <img id="player6Item4" class="playerItemMatch" />
+                    <img id="player6Item5" class="playerItemMatch" />
+                    <img id="player6Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA6"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled6"></span></td>
+                <td class="gold"><span class="goldEarned6"></span></td>
+                <td><span class="playerDamageToChamps6"></span></td>
+                <td><span class="playerWardsPlaced6" style="color:#6C0"></span> / <span class="playerWardsKilled6" style="color:#D20"></span></td>
+            </tr>
+            <tr>
+                <td><img id="champ7ImgMatch" src="" class="champImgMatch" /><img id="7summ1" src="" class="summ1Match" /><img id="7summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName7 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel7"></span></sup></span></td>
+                <td class="league7 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player7Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player7Item1" class="playerItemMatch" />
+                    <img id="player7Item2" class="playerItemMatch" />
+                    <img id="player7Item3" class="playerItemMatch" />
+                    <img id="player7Item4" class="playerItemMatch" />
+                    <img id="player7Item5" class="playerItemMatch" />
+                    <img id="player7Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA7"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled7"></span></td>
+                <td class="gold"><span class="goldEarned7"></span></td>
+                <td><span class="playerDamageToChamps7"></span></td>
+                <td><span class="playerWardsPlaced7" style="color:#6C0"></span> / <span class="playerWardsKilled7" style="color:#D20"></span></td>
+            </tr>
+            <tr>
+                <td><img id="champ8ImgMatch" src="" class="champImgMatch" /><img id="8summ1" src="" class="summ1Match" /><img id="8summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName8 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel8"></span></sup></span></td>
+                <td class="league8 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player8Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player8Item1" class="playerItemMatch" />
+                    <img id="player8Item2" class="playerItemMatch" />
+                    <img id="player8Item3" class="playerItemMatch" />
+                    <img id="player8Item4" class="playerItemMatch" />
+                    <img id="player8Item5" class="playerItemMatch" />
+                    <img id="player8Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA8"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled8"></span></td>
+                <td class="gold"><span class="goldEarned8"></span></td>
+                <td><span class="playerDamageToChamps8"></span></td>
+                <td><span class="playerWardsPlaced8" style="color:#6C0"></span> / <span class="playerWardsKilled8" style="color:#D20"></span></td>
+            </tr>
+            <tr>
+                <td><img id="champ9ImgMatch" src="" class="champImgMatch" /><img id="9summ1" src="" class="summ1Match" /><img id="9summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName9 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel9"></span></sup></span></td>
+                <td class="league9 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player9Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player9Item1" class="playerItemMatch" />
+                    <img id="player9Item2" class="playerItemMatch" />
+                    <img id="player9Item3" class="playerItemMatch" />
+                    <img id="player9Item4" class="playerItemMatch" />
+                    <img id="player9Item5" class="playerItemMatch" />
+                    <img id="player9Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA9"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled9"></span></td>
+                <td class="gold"><span class="goldEarned9"></span></td>
+                <td><span class="playerDamageToChamps9"></span></td>
+                <td><span class="playerWardsPlaced9" style="color:#6C0"></span> / <span class="playerWardsKilled9" style="color:#D20"></span></td>
+            </tr>
+        </table>
+    </div>
+    <!-- 3v3 Match Template -->
+    <div class="playerTemplate3x3" style="display:none">
+        <table style="color:white; width:100%; transform:translateX(-0.595%); white-space:nowrap">
+            <tr style="font-size:0.875em; color:rgb(204, 204, 204)">
+                <td></td>
+                <td>Summoner</td>
+                <td>League</td>
+                <td><span class="win0" style="font:bold 1.5625rem 'Trebuchet MS'; margin-right:8.2781%"></span></td>
+                <td style="margin-right:10%">K/D/A</td>
+                <td style="margin-right:10%">CS</td>
+                <td style="transform:translateX(-4%)">Gold</td>
+                <td>Damage</td>
+                <td>Wards</td>
+            </tr>
+            <tr>
+                <td><img id="champ0ImgMatch" src="" class="champImgMatch" /><img id="0summ1" src="" class="summ1Match" /><img id="0summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName0 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel0"></span></sup></span></td>
+                <td class="league0 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player0Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player0Item1" class="playerItemMatch" />
+                    <img id="player0Item2" class="playerItemMatch" />
+                    <img id="player0Item3" class="playerItemMatch" />
+                    <img id="player0Item4" class="playerItemMatch" />
+                    <img id="player0Item5" class="playerItemMatch" />
+                    <img id="player0Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA0"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled0"></span></td>
+                <td class="gold"><span class="goldEarned0"></span></td>
+                <td><span class="playerDamageToChamps0"></span></td>
+                <td><span class="playerWardsPlaced0" style="color:#6C0"></span> / <span class="playerWardsKilled0" style="color:#D20"></span></td>
+            </tr>
+            <tr>
+                <td><img id="champ1ImgMatch" src="" class="champImgMatch" /><img id="1summ1" src="" class="summ1Match" /><img id="1summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName1 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel1"></span></sup></span></td>
+                <td class="league1 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player1Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player1Item1" class="playerItemMatch" />
+                    <img id="player1Item2" class="playerItemMatch" />
+                    <img id="player1Item3" class="playerItemMatch" />
+                    <img id="player1Item4" class="playerItemMatch" />
+                    <img id="player1Item5" class="playerItemMatch" />
+                    <img id="player1Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA1"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled1"></span></td>
+                <td class="gold"><span class="goldEarned1"></span></td>
+                <td><span class="playerDamageToChamps1"></span></td>
+                <td><span class="playerWardsPlaced1" style="color:#6C0"></span> / <span class="playerWardsKilled1" style="color:#D20"></span></td>
+            </tr>
+            <tr>
+                <td><img id="champ2ImgMatch" src="" class="champImgMatch" /><img id="2summ1" src="" class="summ1Match" /><img id="2summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName2 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel2"></span></sup></span></td>
+                <td class="league2 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player2Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player2Item1" class="playerItemMatch" />
+                    <img id="player2Item2" class="playerItemMatch" />
+                    <img id="player2Item3" class="playerItemMatch" />
+                    <img id="player2Item4" class="playerItemMatch" />
+                    <img id="player2Item5" class="playerItemMatch" />
+                    <img id="player2Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA2"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled2"></span></td>
+                <td class="gold"><span class="goldEarned2"></span></td>
+                <td><span class="playerDamageToChamps2"></span></td>
+                <td><span class="playerWardsPlaced2" style="color:#6C0"></span> / <span class="playerWardsKilled2" style="color:#D20"></span></td>
+            </tr>
+            <!-- Team 2 -->
+            <tr style="font-size:0.875em; color:rgb(204, 204, 204)">
+                <td></td>
+                <td>Summoner</td>
+                <td>League</td>
+                <td><span class="win1" style="font:bold 1.5625rem 'Trebuchet MS'; margin-right:8.2781%"></span></td>
+                <td style="margin-right:10%">K/D/A</td>
+                <td style="margin-right:10%">CS</td>
+                <td style="transform:translateX(-4%)">Gold</td>
+                <td>Damage</td>
+                <td>Wards</td>
+            </tr>
+            <tr>
+                <td><img id="champ3ImgMatch" src="" class="champImgMatch" /><img id="3summ1" src="" class="summ1Match" /><img id="3summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName3 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel3"></span></sup></span></td>
+                <td class="league3 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player3Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player3Item1" class="playerItemMatch" />
+                    <img id="player3Item2" class="playerItemMatch" />
+                    <img id="player3Item3" class="playerItemMatch" />
+                    <img id="player3Item4" class="playerItemMatch" />
+                    <img id="player3Item5" class="playerItemMatch" />
+                    <img id="player3Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA3"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled3"></span></td>
+                <td class="gold"><span class="goldEarned3"></span></td>
+                <td><span class="playerDamageToChamps3"></span></td>
+                <td><span class="playerWardsPlaced3" style="color:#6C0"></span> / <span class="playerWardsKilled3" style="color:#D20"></span></td>
+            </tr>
+            <tr>
+                <td><img id="champ4ImgMatch" src="" class="champImgMatch" /><img id="4summ1" src="" class="summ1Match" /><img id="4summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName4 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel4"></span></sup></span></td>
+                <td class="league4 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player4Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player4Item1" class="playerItemMatch" />
+                    <img id="player4Item2" class="playerItemMatch" />
+                    <img id="player4Item3" class="playerItemMatch" />
+                    <img id="player4Item4" class="playerItemMatch" />
+                    <img id="player4Item5" class="playerItemMatch" />
+                    <img id="player4Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA4"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled4"></span></td>
+                <td class="gold"><span class="goldEarned4"></span></td>
+                <td><span class="playerDamageToChamps4"></span></td>
+                <td><span class="playerWardsPlaced4" style="color:#6C0"></span> / <span class="playerWardsKilled4" style="color:#D20"></span></td>
+            </tr>
+            <tr>
+                <td><img id="champ5ImgMatch" src="" class="champImgMatch" /><img id="5summ1" src="" class="summ1Match" /><img id="5summ2" align="top" src="" class="summ2Match" /></td>
+                <td class="nameMatch"><span class="playerName5 ellipName"></span><br /><span style="color:rgb(204, 204, 204); font-size:0.9375em"><sup><span class="playerLevel5"></span></sup></span></td>
+                <td class="league5 leagueMatch">-</td>
+                <td class="playerItemsMatchtd">
+                    <img id="player5Item0" class="playerItemMatch" style="margin-left:1.4%" />
+                    <img id="player5Item1" class="playerItemMatch" />
+                    <img id="player5Item2" class="playerItemMatch" />
+                    <img id="player5Item3" class="playerItemMatch" />
+                    <img id="player5Item4" class="playerItemMatch" />
+                    <img id="player5Item5" class="playerItemMatch" />
+                    <img id="player5Item6" class="playerItemMatch" />
+                </td>
+                <td class="gold" style="margin-right:10%"><span class="playerKDA5"></span></td>
+                <td style="margin-right:10%"><span class="playerTotalMinionsKilled5"></span></td>
+                <td class="gold"><span class="goldEarned5"></span></td>
+                <td><span class="playerDamageToChamps5"></span></td>
+                <td><span class="playerWardsPlaced5" style="color:#6C0"></span> / <span class="playerWardsKilled5" style="color:#D20"></span></td>
+            </tr>
+        </table>
+    </div>
+    <!-- Ranked Stats Page -->
+    <nav id="ranked_page" class="menu slide-menu-bottom3" style="overflow:auto">
+        <div class="rankedBoxButtons">
+            <!-- Change color of button border and text -->
+            <button type="button" class="nav-toggler toggle-slide-bottom33 buttons rankedButton" style="margin-right:20.3%">Season 3</button>
+            <button type="button" class="nav-toggler toggle-slide-bottom32 buttons rankedButton" style="margin-right:.25%">Season 4</button>
+            <button type="button" class="nav-toggler toggle-slide-bottom31 buttons rankedButton" style="margin-right:.25%">Season 5</button>
+        </div>
+    </nav>
+    <nav class="menu slide-menu-bottom31">
+        <div class="rankedBox2015">
+            <table id="rankedStats2015" class="rankedStats rankedTable">
+                <!-- rows with higher wins than losses are transparent green otherwise transparent red -->
+                <tr style="background:linear-gradient(#121217,#000); font:bold 1.25em 'Trebuchet MS'">
+                    <td class="rankedCol0" style="color: rgb(204, 204, 204)"></td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Champion</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Win %</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Wins</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Losses</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">KDA</td> <!-- KD below smaller? -->
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Kills</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Deaths</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Assists</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">CS</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Gold</td>
+                </tr>
+            </table>
+        </div>
+
+    </nav>
+    <nav class="menu slide-menu-bottom32">
+        <div class="rankedBox2014">
+            <table id="rankedStats2014" class="rankedStats rankedTable">
+                <!-- rows with higher wins than losses are transparent green otherwise transparent red -->
+                <tr style="background:linear-gradient(#121217,#000); font:bold 1.25em 'Trebuchet MS'">
+                    <td class="rankedCol0" style="color: rgb(204, 204, 204)"></td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Champion</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Win %</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Wins</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Losses</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">KDA</td> <!-- KD below smaller? -->
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Kills</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Deaths</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Assists</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">CS</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Gold</td>
+                </tr>
+            </table>
+        </div>
+
+    </nav>
+    <nav class="menu slide-menu-bottom33">
+        <div class="rankedBox3">
+            <table id="rankedStats3" class="rankedStats rankedTable">
+                <!-- rows with higher wins than losses are transparent green otherwise transparent red -->
+                <tr style="background:linear-gradient(#121217,#000); font:bold 1.25em 'Trebuchet MS'">
+                    <td class="rankedCol0" style="color: rgb(204, 204, 204)"></td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Champion</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Win %</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Wins</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Losses</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">KDA</td> <!-- KD below smaller? -->
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Kills</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Deaths</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Assists</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">CS</td>
+                    <td class="rankedCol" style="color: rgb(204, 204, 204)">Gold</td>
+                </tr>
+            </table>
+        </div>
+
+    </nav>
+    <!-- Rune Page -->
+    <nav class="menu slide-menu-bottom4" id="rune_page">
+        <div class="page_container">
+            <div class="runeSelection">
+                <button type="button" class="runeButtons" style="margin-right:10px">3</button>
+                <button type="button" class="runeButtons">2</button>
+                <button type="button" class="runeButtons">1</button>
+            </div>
+            <div class="right_side_bar"></div>
+        </div>
+    </nav>
+    <script src="Scripts/Classie.js"></script>
+    <script src="Scripts/LolChampJS.js"></script>
+
+
+            <hr />
+            <footer>
+                <p class="text1">&copy; 2016 - LolChamp isn't 
+                    endorsed by Riot Games and doesn't reflect the views or opinions 
+                    of Riot Games or anyone officially involved in producing or managing 
+                    League of Legends. League of Legends and Riot Games are trademarks or 
+                    registered trademarks of Riot Games, Inc. League of Legends © Riot Games, 
+                    Inc.</p>
+            </footer>
+        </div>
+    </form>
+    
+    <script type="text/javascript">
+        var _urq = _urq || [];
+        _urq.push(['initSite', '2562420d-be58-4a41-80a8-4f974457a69b']);
+        (function() {
+        var ur = document.createElement('script'); ur.type = 'text/javascript'; ur.async = true;
+        ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
+        })();
+    </script>
+</body>
+</html>
